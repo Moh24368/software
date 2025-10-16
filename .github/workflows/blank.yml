@@ -1,14 +1,15 @@
 name: hello-world
 on: push
 jobs:
-     my-job:
-     run-on: ununtu-latest
-     steps:
-       - name: my-step
-       run: echo "hello world"
-    my-job:
-      run-on: ununtu-latest
-      steps:
-        - name: moh
-        run: echo "Hi Mohamed"
+my-job:
+   run-on: ununtu-latest
+   steps:
+      - name: my-step
+        run: echo "hello world"
+ my-jolkhb:
+   run-on: ununtu-latest
+   needs: my job
+   steps:
+     - name: moh
+     run: echo "Hil Mohamed"
       
